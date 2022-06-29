@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-icecream",
+  "name": "restaurant-page",
   "version": "1.0.0",
-  "description": "A template for the app. TS, Prettier, ESLint, Webpack.",
+  "description": "Restaurant page project made for Odin Project course.",
   "main": "index.ts",
   "private": true,
   "scripts": {

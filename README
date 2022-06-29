@@ -1,3 +1,2 @@
-A template for the app. TS, Prettier, ESLint, Webpack.
-
-After cloning the repo run "npm install to download modules".
+# Restaurant page
+Restaurant page project made for Odin Course project using typescript.
