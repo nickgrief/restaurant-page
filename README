@@ -1,0 +1,3 @@
+A template for the app. TS, Prettier, ESLint, Webpack.
+
+After cloning the repo run "npm install to download modules".
