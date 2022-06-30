@@ -40,6 +40,13 @@ function createMain() {
   icecream.title = 'Photo by Benjamín Hazael Rojas García';
   main.appendChild(icecream);
 
+  const holder = document.createElement('div');
+
+  const banner = document.createElement('p');
+  banner.classList.toggle('banner');
+  banner.textContent = 'What people say about our restaurant:';
+  holder.appendChild(banner);
+
   // I've had a stroke while naming things. Let's just never look here m'kay?
   const bullet = document.createElement('ul');
   bullet.classList.toggle('bullet-points');
@@ -50,7 +57,9 @@ function createMain() {
     bpoint.style.color = p.color;
     bullet.appendChild(bpoint);
   }
-  main.appendChild(bullet);
+  holder.appendChild(bullet);
+
+  main.appendChild(holder);
 
   index.body.appendChild(main);
 }

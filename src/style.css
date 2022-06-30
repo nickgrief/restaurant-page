@@ -44,6 +44,7 @@ header {
   flex: auto;
   text-align: center;
   font-style: italic;
+  font-weight: bold;
 }
 
 .tab-list {
@@ -63,6 +64,15 @@ main {
   width: auto;
   margin: 24px;
   border-radius: 24px;
+}
+
+.banner {
+  font-size: 2rem;
+  max-width: fit-content;
+  padding: 12px;
+  background-color: skyblue;
+  text-shadow: 2px 2px 1px hotpink;
+  border-radius: 12px;
 }
 
 .bullet-points {
