@@ -4,13 +4,6 @@ body {
     'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier,
     monospace;
   background-color: lightblue;
-  max-height: 100vh;
-  max-width: 100vw;
-  display: grid;
-  grid-template-rows: 60px 1fr;
-  grid-template-areas:
-    'header'
-    'main';
   filter: drop-shadow(3px 3px 1px deeppink);
 }
 
@@ -24,31 +17,4 @@ button {
 
 button:hover {
   background-color: rgb(180, 249, 255);
-}
-
-header {
-  display: flex;
-  padding: 24px;
-  align-items: center;
-  background-color: skyblue;
-  grid-area: header;
-}
-
-.name {
-  font-size: 2rem;
-  font-weight: bold;
-  color: deeppink;
-}
-
-.slogan {
-  flex: auto;
-  text-align: center;
-  font-style: italic;
-  font-weight: bold;
-}
-
-.tab-list {
-  display: flex;
-  font-weight: bold;
-  gap: 16px;
 }

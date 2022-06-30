@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  background-color: skyblue;
+}
+
+.name {
+  font-size: 2rem;
+  font-weight: bold;
+  color: deeppink;
+}
+
+.slogan {
+  flex: auto;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.tab-list {
+  display: flex;
+  font-weight: bold;
+  gap: 16px;
+}
