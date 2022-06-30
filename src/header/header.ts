@@ -1,4 +1,5 @@
 import './style.css';
+import * as index from '../index';
 
 const tabNames = ['Home', 'Menu', 'Contacts'];
 
@@ -22,6 +23,9 @@ export function show(parent: HTMLElement) {
     const tab = document.createElement('li');
     tab.classList.toggle('tab-list-item');
     const link = document.createElement('button');
+    link.addEventListener('click', () => {
+      index.onPageSwitch(tabName);
+    });
     link.textContent = tabName;
     tab.appendChild(link);
     tabs.appendChild(tab);
