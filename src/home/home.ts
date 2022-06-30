@@ -1,5 +1,5 @@
-import * as index from '../index';
 import icImage from './icecream.jpg';
+import './style.css';
 
 const bp = (point: string, color: string) => {
   return {
@@ -26,12 +26,11 @@ const bps = [
   ),
 ];
 
-export function show() {
-  index.createHeader();
-  createMain();
+export function show(parent: HTMLElement) {
+  createMain(parent);
 }
 
-function createMain() {
+function createMain(parent: HTMLElement) {
   const main = document.createElement('main');
 
   const icecream = document.createElement('img');
@@ -61,5 +60,5 @@ function createMain() {
 
   main.appendChild(holder);
 
-  index.body.appendChild(main);
+  parent.appendChild(main);
 }

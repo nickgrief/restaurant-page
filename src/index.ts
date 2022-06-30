@@ -2,12 +2,19 @@ import './reset.css';
 import './style.css';
 
 import * as home from './home/home';
+import * as menu from './menu/menu';
 
 const tabNames = ['Home', 'Menu', 'Contacts'];
 
-export const body = document.querySelector('body')!;
+const body = document.querySelector('body')!;
 
-home.show();
+show();
+
+function show() {
+  createHeader();
+  menu.show(body);
+  home.show(body);
+}
 
 export function createHeader() {
   const header = document.createElement('header');
